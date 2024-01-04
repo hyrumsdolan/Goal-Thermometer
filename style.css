@@ -1,0 +1,136 @@
+html {
+    background: #a4b6d3;
+  }
+  
+  *:focus { outline:none; }
+  
+  h1 {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+  }
+  .progressbar {
+   width: 25px;
+   height: 215px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-top: -107px;
+   margin-left: -22px;
+   background: #fff;
+   border: 10px solid #333;
+   border-bottom: 0;
+   -webkit-border-top-left-radius: 60px;
+  -webkit-border-top-right-radius: 60px;
+  -moz-border-radius-topleft: 60px;
+  -moz-border-radius-topright: 60px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  } 
+  
+  .progressbar::before {
+    content: " ";
+    position: absolute;
+    z-index: 0;
+    bottom: -56px;
+    left: -18px;
+    width: 40px;
+    border: 10px solid #fff;
+    height: 40px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+  
+  .progressbar::after {
+    content: "";
+    display: block;  
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -66px;
+    left: -28px;
+    background: red;
+    border: 10px solid #333;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    z-index: -1;
+  }
+  
+  .progressbar-value {
+  font-family: Segoe UI,Arial,sans-serif;
+   position: absolute;
+   display: block;
+   margin: 0;
+   border: 0;
+   width: 8px;
+   height: 200px;
+   top: 21px;
+   left: 8px;
+   overflow: hidden;
+   text-indent: -30px;
+   background: red;
+  }
+  .progressbar-cover {
+   position: absolute;
+   display: block;
+   width: 8px;
+   height: 200px;
+   border: 0;
+   left: 0;
+   bottom: 0%;
+   background: #ccc;
+  }
+  
+  #slider { 
+    position:absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -77px;
+    margin-left: -22px;
+    width: 45px; 
+    height: 200px; 
+    background: none;
+    border:none; 
+  }
+  
+  .ui-slider-vertical .ui-slider-handle { 
+    left: 80px;
+    background: #fff;
+    width: 80px;
+    height: 34px;
+    border: none;
+    border-radius: 0;
+    font-family: 'Rock Salt', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3.5px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .ui-slider-handle::before { 
+   content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 21px solid transparent;
+      border-bottom: 21px solid transparent;
+      border-right: 21px solid #fff;
+      left: -21px;
+      top: -1px; 
+  }
+
+  .goalDisplay {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 30%; /* Adjust this value as needed to align with the tip */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Add more styling as needed */
+}
+
